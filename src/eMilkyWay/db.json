@@ -1,0 +1,28 @@
+{
+  "seller": [
+    {
+      "id": "8bef",
+      "name": "Nurul Amin",
+      "email": "nurul.amin@seller.com",
+      "password": "nurul123"
+    },
+    {
+      "id": "d9f3",
+      "name": "Nion Ahmed",
+      "email": "nion.ahmed@seller.com",
+      "password": "nion123"
+    },
+    {
+      "id": "a1fb",
+      "name": "nurun nahar",
+      "password": "nurun.nahar",
+      "email": "nurun.narah@seller.com"
+    },
+    {
+      "id": "443a",
+      "name": "john cena",
+      "password": "john.cena",
+      "email": "jon.cena@test.com"
+    }
+  ]
+}
