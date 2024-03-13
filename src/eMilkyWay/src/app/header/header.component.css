@@ -3,10 +3,11 @@
     justify-content: space-between;
 }
 
-.nav h1 {
+.nav h1 a{
     color: orangered;
     margin: 0;
     font-size: 40px;
+    text-decoration: none;
 }
 
 .nav .nav-search {

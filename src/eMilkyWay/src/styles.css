@@ -16,7 +16,7 @@ body{
     margin-bottom: 20px;
     border: 1px solid orange;
     padding-left: 15px;
-    color: orange;
+    color: black;
 }
 
 .form-button{
@@ -27,4 +27,7 @@ body{
     color: orange;
     font-weight: bold;
     cursor: pointer;
+}
+.error-p{
+    color: red;
 }
