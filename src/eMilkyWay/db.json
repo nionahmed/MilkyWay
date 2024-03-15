@@ -47,5 +47,25 @@
       "password": "",
       "email": ""
     }
+  ],
+  "products": [
+    {
+      "id": "cdc8",
+      "name": "Samsung",
+      "price": "1000",
+      "category": "A",
+      "color": "Cyan",
+      "description": "Nanana",
+      "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp"
+    },
+    {
+      "id": "aad4",
+      "name": "",
+      "price": "",
+      "category": "",
+      "color": "",
+      "description": "",
+      "image": ""
+    }
   ]
 }
