@@ -29,6 +29,9 @@ export class SellerAuthComponent implements OnInit {
         this.authError="Incorrect Email or Password";
       }
     })
+    /*if(this.sellerService.isLoginError){
+      this.authError="Incorrect Email or Password";
+    }*/
   }
 
   ngOnInit(): void {

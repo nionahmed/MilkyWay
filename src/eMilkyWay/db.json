@@ -60,12 +60,21 @@
     },
     {
       "id": "aad4",
-      "name": "",
-      "price": "",
-      "category": "",
-      "color": "",
-      "description": "",
-      "image": ""
+      "name": "Apple",
+      "price": "100000 BDT",
+      "category": "A+",
+      "color": "Black",
+      "description": "Secret",
+      "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(6)-5363.jpg"
+    },
+    {
+      "id": "3343",
+      "name": "Vivo y20",
+      "price": "30000 BDT",
+      "category": "A",
+      "color": "Blue",
+      "description": "Highly cheap",
+      "image": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1610000679108/919a1841eb21214e763ada8662e5204e.png"
     }
   ]
 }

@@ -11,6 +11,7 @@ import { json } from 'stream/consumers';
 export class SellerService {
   isSellerLoggedIn = new BehaviorSubject<boolean>(false);
   isLoginError=new EventEmitter<boolean>(false);
+  //isLoginError=false;
   constructor(private http: HttpClient, private router: Router) { }
   userSignUp(data: SignUp) {
     this.http.post("http://localhost:3000/seller",
@@ -35,12 +36,15 @@ export class SellerService {
       { observe: 'response' }
     ).subscribe((result: any) => {
       console.log(result);
-      if (result && result.body && result.body[0].email==data.email && result.body[0].password==data.password) {
+      if (result && result.body && result.body.length===1) {
+        //this.isLoginError=false;
+        this.isLoginError.emit(false);
         localStorage.setItem('seller', JSON.stringify(result.body));
         this.router.navigate(['seller-home']);
       }
       else {
       this.isLoginError.emit(true);
+      //this.isLoginError=true;
       }
     })
   }
