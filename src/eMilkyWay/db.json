@@ -50,13 +50,13 @@
   ],
   "products": [
     {
-      "id": "cdc8",
       "name": "Samsung",
       "price": "1000",
       "category": "A",
-      "color": "Cyan",
+      "color": "akashi",
       "description": "Nanana",
-      "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp"
+      "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp",
+      "id": "cdc8"
     },
     {
       "id": "aad4",
@@ -75,6 +75,24 @@
       "color": "Blue",
       "description": "Highly cheap",
       "image": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1610000679108/919a1841eb21214e763ada8662e5204e.png"
+    },
+    {
+      "id": "a169",
+      "name": "redmi",
+      "price": "87845",
+      "category": "A",
+      "color": "white",
+      "description": "pore bolbo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIc01uRqyUuWLdtJ8rT6MJ-HhpsqaXcZ_Rv-3tqc225Q&s"
+    },
+    {
+      "name": "redmi",
+      "price": "30000",
+      "category": "A",
+      "color": "white-ash",
+      "description": "Hard",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIc01uRqyUuWLdtJ8rT6MJ-HhpsqaXcZ_Rv-3tqc225Q&s",
+      "id": "c25d"
     }
   ]
 }
