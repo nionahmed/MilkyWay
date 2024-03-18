@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit{
           this.menuType="seller";
           this.currentStyles={
             'color':'blueviolet'
-          }
+          };
           
           let sellerStore =localStorage.getItem('seller');
           let sellerData=sellerStore && JSON.parse(sellerStore);
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit{
   }
   logout(){
     localStorage.removeItem('seller');
-    this.route.navigate(['/']); 
-    
+    this.route.navigate(['/']);
+    this.sellerName='';  
   }
 }

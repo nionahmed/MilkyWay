@@ -46,6 +46,24 @@
       "name": "",
       "password": "",
       "email": ""
+    },
+    {
+      "id": "356c",
+      "name": "Mr xyz",
+      "password": "123",
+      "email": "xyz123@test.com"
+    },
+    {
+      "id": "c473",
+      "name": "Mr Hamza",
+      "password": "hamza",
+      "email": "hamza@123.com"
+    },
+    {
+      "id": "9100",
+      "name": "fsdf",
+      "password": "123",
+      "email": "asz"
     }
   ],
   "products": [
@@ -53,7 +71,7 @@
       "name": "Samsung",
       "price": "1000",
       "category": "A",
-      "color": "akashi",
+      "color": "blue",
       "description": "Nanana",
       "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp",
       "id": "cdc8"
@@ -93,6 +111,15 @@
       "description": "Hard",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIc01uRqyUuWLdtJ8rT6MJ-HhpsqaXcZ_Rv-3tqc225Q&s",
       "id": "c25d"
+    },
+    {
+      "name": "samsung",
+      "price": "100000",
+      "category": "A",
+      "color": "sdfsdf",
+      "description": "sdfsadf",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/bd/2307/gallery/bd-galaxy-z-fold5-f946-sm-f946blbdbkd-thumb-537489358?$344_344_PNG$",
+      "id": "d0d6"
     }
   ]
 }
