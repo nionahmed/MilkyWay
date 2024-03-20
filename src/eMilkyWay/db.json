@@ -69,10 +69,10 @@
   "products": [
     {
       "name": "Samsung",
-      "price": "1000",
+      "price": "100000 BDT",
       "category": "A",
       "color": "blue",
-      "description": "Nanana",
+      "description": "Highly demanded in BD now",
       "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp",
       "id": "cdc8"
     },

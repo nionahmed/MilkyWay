@@ -1,1 +1,13 @@
-<p>home works!</p>
+@if (popularProduct) {
+	<ngb-carousel>
+		<ng-template *ngFor="let item of popularProduct" ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img class="product-header-img" src="{{item.image}}" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>{{item.name | uppercase}} - {{item.price}}</h3>
+				<p>{{item.description}}</p>
+			</div>
+		</ng-template>
+	</ngb-carousel>
+}
