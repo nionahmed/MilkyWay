@@ -3,12 +3,13 @@ import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { ChangefontStyleDirective } from '../directives/changefont-style.directive';
 
 
 @Component({
   selector: 'app-seller-home',
   standalone: true,
-  imports: [NgFor, RouterLink],
+  imports: [NgFor, RouterLink, ChangefontStyleDirective],
   templateUrl: './seller-home.component.html',
   styleUrl: './seller-home.component.css'
 })

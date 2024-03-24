@@ -10,6 +10,7 @@ import { json } from 'stream/consumers';
 })
 export class SellerService {
   isSellerLoggedIn = new BehaviorSubject<boolean>(false);
+  //isSellerLoggedIn=false;
   isLoginError=new EventEmitter<boolean>(false);
   //isLoginError=false;
   constructor(private http: HttpClient, private router: Router) { }
@@ -19,6 +20,7 @@ export class SellerService {
       { observe: 'response' }
     ).subscribe((result) => {
       this.isSellerLoggedIn.next(true);
+      //this.isSellerLoggedIn=true;
       localStorage.setItem('seller', JSON.stringify(result.body));
       this.router.navigate(['seller-home']);
       console.log(result);
@@ -27,6 +29,8 @@ export class SellerService {
   reloadSeller() {
     if (localStorage.getItem('seller')) {
       this.isSellerLoggedIn.next(true);
+      //this.isSellerLoggedIn=true;
+
       this.router.navigate(['seller-home']);
     }
   }

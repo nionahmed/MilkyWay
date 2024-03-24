@@ -18,7 +18,7 @@
         </ul>
 
         <ul *ngSwitchCase="'seller'">
-            <li><a [ngStyle]="currentStyles" routerLink="seller-home">Product List</a></li>
+            <li><a appHighlight [ngStyle]="currentStyles" routerLink="seller-home">Product List</a></li>
             <li><a [ngStyle]="currentStyles"  routerLink="seller-add-product">Add Product</a></li>
             <li><a [ngStyle]="currentStyles" (click)="logout()" >Logout</a></li>
     

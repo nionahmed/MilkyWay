@@ -16,8 +16,8 @@
         </thead>
         <tbody>
             <tr *ngFor = "let item of productList">
-                <td><img src="{{item.image}}" alt="{{item.name}}"></td>
-                <td>{{item.name}}</td>
+                <td appChangePictureSize ><img appChangePictureSize src="{{item.image}}" alt="{{item.name}}"></td>
+                <td appChangefontStyle>{{item.name}}</td>
                 <td>{{item.price}}</td>
                 <td>{{item.color}}</td>
                 <td>{{item.category}}</td>

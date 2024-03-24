@@ -1,11 +1,12 @@
 import { NgStyle, NgSwitch, NgSwitchCase, UpperCasePipe } from '@angular/common';
 import { Component, OnInit,Pipe,PipeTransform } from '@angular/core';
 import { RouterLink,Router} from '@angular/router';
+import { HighlightDirective } from '../directives/highlight.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgSwitch, NgSwitchCase, NgStyle,UpperCasePipe],
+  imports: [RouterLink, NgSwitch, NgSwitchCase, NgStyle,UpperCasePipe,HighlightDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
