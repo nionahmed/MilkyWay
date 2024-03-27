@@ -16,7 +16,7 @@
         </thead>
         <tbody>
             <tr *ngFor = "let item of productList">
-                <td><img src="{{item.image}}" alt="{{item.name}}"></td>
+                <td><img appImageSizeChanger src="{{item.image}}" alt="{{item.name}}"></td>
                 <td appChangefontStyle>{{item.name}}</td>
                 <td>{{item.price | priceFormatterIndian :'BDT': 0}}</td>
                 <td>{{item.color}}</td>

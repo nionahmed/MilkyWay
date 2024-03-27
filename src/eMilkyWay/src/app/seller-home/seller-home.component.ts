@@ -6,12 +6,13 @@ import { RouterLink } from '@angular/router';
 import { ChangefontStyleDirective } from '../directives/changefont-style.directive';
 import { PriceFormatterPipe } from '../pipes/price-formatter.pipe';
 import { PriceFormatterIndianPipe } from '../pipes/price-formatter-indian.pipe';
+import { ImageSizeChangerDirective } from '../directives/image-size-changer.directive';
 
 
 @Component({
   selector: 'app-seller-home',
   standalone: true,
-  imports: [NgFor, RouterLink, ChangefontStyleDirective, PriceFormatterPipe, PriceFormatterIndianPipe],
+  imports: [NgFor, RouterLink, ChangefontStyleDirective, PriceFormatterPipe, PriceFormatterIndianPipe, ImageSizeChangerDirective],
   templateUrl: './seller-home.component.html',
   styleUrl: './seller-home.component.css'
 })
