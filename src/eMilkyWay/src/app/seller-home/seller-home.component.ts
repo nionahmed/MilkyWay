@@ -5,12 +5,13 @@ import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ChangefontStyleDirective } from '../directives/changefont-style.directive';
 import { PriceFormatterPipe } from '../pipes/price-formatter.pipe';
+import { PriceFormatterIndianPipe } from '../pipes/price-formatter-indian.pipe';
 
 
 @Component({
   selector: 'app-seller-home',
   standalone: true,
-  imports: [NgFor, RouterLink, ChangefontStyleDirective, PriceFormatterPipe],
+  imports: [NgFor, RouterLink, ChangefontStyleDirective, PriceFormatterPipe, PriceFormatterIndianPipe],
   templateUrl: './seller-home.component.html',
   styleUrl: './seller-home.component.css'
 })

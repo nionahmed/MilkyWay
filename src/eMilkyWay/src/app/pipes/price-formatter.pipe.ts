@@ -10,10 +10,9 @@ export class PriceFormatterPipe implements PipeTransform {
     if (isNaN(value) || value === null || value === undefined) {
       return ''; 
     }
-    const integerPart = Math.trunc(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, thousandsSeparator);
-    const decimalPart = (decimalCount > 0) ? decimalSeparator + (Math.abs(value) - Math.abs(Math.trunc(value))).toFixed(decimalCount).slice(2) : '';
+    const formattedValue = value.toFixed(decimalCount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, thousandsSeparator);
 
-    return currencySymbol + ' ' + integerPart + decimalPart;
+    return currencySymbol + ' ' + formattedValue;
   }
 
 }
