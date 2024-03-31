@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
 import { NgFor } from '@angular/common';
@@ -18,28 +18,36 @@ import { ImageSizeChangerDirective } from '../directives/image-size-changer.dire
 })
 export class SellerHomeComponent implements OnInit {
 
-  productList : undefined|product[];
-  productMessage:undefined|string;
+  numberOfProducts = signal(4);
+  productList: undefined | product[];
+  productMessage: undefined | string;
 
-  constructor(private productService: ProductService){}
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.productService.productListing().subscribe((result)=>{
-      this.productList=result;
+    this.productService.productListing().subscribe((result) => {
+      this.productList = result;
+      this.numberOfProducts.set(result.length);
+
     })
   }
-  deleteProduct(id:string){
+
+ 
+
+  deleteProduct(id: string) {
     console.log(id);
-    this.productService.deleteProduct(id).subscribe((result)=>{
-      if(result){
-        this.productMessage="product is deleted";
-        this.productService.productListing().subscribe((result)=>{
-          this.productList=result;
+    this.productService.deleteProduct(id).subscribe((result) => {
+      if (result) {
+        this.productMessage = "product is deleted";
+        this.productService.productListing().subscribe((result) => {
+          this.productList = result;
+          this.numberOfProducts.set(result.length);
+
         })
       }
     })
-    setTimeout(()=>{
-      this.productMessage=undefined
+    setTimeout(() => {
+      this.productMessage = undefined
     }, 3000);
   }
 }
