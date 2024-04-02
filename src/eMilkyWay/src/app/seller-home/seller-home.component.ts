@@ -18,7 +18,7 @@ import { ImageSizeChangerDirective } from '../directives/image-size-changer.dire
 })
 export class SellerHomeComponent implements OnInit {
 
-  numberOfProducts = signal(4);
+  numberOfProducts = signal(0);
   productList: undefined | product[];
   productMessage: undefined | string;
 
@@ -31,8 +31,6 @@ export class SellerHomeComponent implements OnInit {
 
     })
   }
-
- 
 
   deleteProduct(id: string) {
     console.log(id);
