@@ -1,66 +1,49 @@
 {
   "seller": [
     {
-      "id": "8bef",
+      "$id": "8bef",
       "name": "Nurul Amin",
       "email": "nurul.amin@seller.com",
       "password": "nurul123"
     },
     {
-      "id": "d9f3",
+      "$id": "d9f3",
       "name": "Nion Ahmed",
       "email": "nion.ahmed@seller.com",
       "password": "nion123"
     },
+
     {
-      "id": "a1fb",
-      "name": "nurun nahar",
-      "password": "nurun.nahar",
-      "email": "nurun.narah@seller.com"
-    },
-    {
-      "id": "443a",
-      "name": "john cena",
-      "password": "john.cena",
-      "email": "jon.cena@test.com"
-    },
-    {
-      "id": "241f",
-      "name": "nisha khan",
-      "password": "nisha.khan",
-      "email": "nisha.khan@test.com"
-    },
-    {
-      "id": "f1d0",
+      "$id": "f1d0",
       "name": "akram",
       "password": "khan",
       "email": "momomo"
     },
     {
-      "id": "5fa0",
+      "$id": "5fa0",
       "email": "sdfsdf",
       "password": "hfg"
     },
     {
-      "id": "b242",
+      "$id": "b242",
       "name": "",
       "password": "",
       "email": ""
     },
     {
-      "id": "356c",
+      "$id": "356c",
       "name": "Mr xyz",
       "password": "123",
       "email": "xyz123@test.com"
     },
     {
-      "id": "c473",
+      "$id": "c473",
       "name": "Mr Hamza",
       "password": "hamza",
       "email": "hamza@123.com"
     },
     {
-      "id": "9100",
+      "$id": "9100",
       "name": "fsdf",
       "password": "123",
       "email": "asz"
